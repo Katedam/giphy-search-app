@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from '../styles/giph.css';
 
 export default function GiphItem({ giph }) {
   const url = giph.images.original.url;
   const title = giph.title;
   return (
-    <li><img src={url} alt={title}/></li>
+    <li className={style.giphItem}><img src={url} alt={title}/></li>
   );
 }
 
