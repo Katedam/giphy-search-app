@@ -4,12 +4,12 @@ import GiphList from './GiphList';
 
 class GiphContainer extends PureComponent {
   state = {
-    searchTerm: '',
+    searchTerm: 'cats',
     giphs: []
   }
 
   componentDidMount() {
-    getGiphs()
+    getGiphs(this.state.searchTerm)
       .then(giphs => this.setState({ giphs }));
   }
 
