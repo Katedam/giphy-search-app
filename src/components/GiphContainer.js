@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { getGiphs } from '../services/giphy-api';
+import GiphList from './GiphList';
 
 class GiphContainer extends PureComponent {
   state = {
@@ -15,7 +16,7 @@ class GiphContainer extends PureComponent {
   render() {
     const giphs = this.state.giphs;
     return (
-      <h1>hello</h1>
+      <GiphList giphs={giphs}/>
     );
   }
 }
