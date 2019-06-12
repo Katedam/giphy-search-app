@@ -1,12 +1,10 @@
 import React from 'react';
-import GiphContainer from './GiphContainer';
-import SearchContainer from './SearchContainer';
+import GiphSearchContainer from './GiphSearchContainer';
 
 export default function App() {
   return (
     <>
-    <SearchContainer />
-    <GiphContainer />
+    <GiphSearchContainer />
     </>
   );
 }
