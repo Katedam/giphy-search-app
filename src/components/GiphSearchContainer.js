@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { getGiphs } from '../services/giphy-api';
 import GiphList from './GiphList';
 import Search from './Search';
+import style from '../styles/main.css';
 
 class GiphSearchContainer extends PureComponent {
   state = {
@@ -29,7 +30,7 @@ class GiphSearchContainer extends PureComponent {
   render() {
     const { giphs, query } = this.state;
     return (
-      <main>
+      <main style={style}>
         <Search query={query} onChange={this.handleChange}/>
         <GiphList giphs={giphs}/>
       </main>

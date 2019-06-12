@@ -1,0 +1,11 @@
+section {
+  padding: 5vw;
+
+  input {
+    display: block;
+    margin: 0 auto;
+    width: 60vw;
+    padding: 10px;
+    font-size: 1em;
+  }
+}
