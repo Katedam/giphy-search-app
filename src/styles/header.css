@@ -14,12 +14,12 @@ header {
     content: " ";
     display: block;
     height: 6vh;
-    width: 30vw;
-    margin-left: 33vw;
-    margin-right: -3px;
+    width: 60vw;
+    max-width: 243px;
+    margin-left: 50%;
     position: absolute;
     background: #e3fd89;
-    transform: rotate(2deg);
+    transform: rotate(2deg) translateX(-50%);
     z-index: -1;
   }
 }

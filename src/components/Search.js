@@ -5,7 +5,9 @@ import style from '../styles/search.css';
 export default function Search({ query, onChange }) {
   return (
     <section style={style}>
-      <input onChange={onChange} name="query" type="text" placeholder={query} value={query}/>
+      <label htmlFor="search">Search
+        <input onChange={onChange} id="search" name="query" type="text" placeholder={query} value={query}/>
+      </label>
     </section>
   );
 }
