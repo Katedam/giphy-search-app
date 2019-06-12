@@ -11,8 +11,8 @@ class GiphSearchContainer extends PureComponent {
   }
 
   updateGiphs = () => {
-    getGiphs(this.state.query)
-      .then(giphs => this.setState({ giphs }));
+    setTimeout(getGiphs(this.state.query)
+      .then(giphs => this.setState({ giphs })), 1000);
   }
 
   componentDidMount() {
