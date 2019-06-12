@@ -1,7 +1,16 @@
 .giphItem {
   list-style-type: none;
+  display: inline-block;
+  justify-self: center;
+  align-self: center;
 
   img {
-    max-width: 30vw;
+    max-width: 60vw;
+  }
+
+  @media only screen and (min-width: 760px) {
+    img {
+      max-width: 30vw;
+    }
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import GiphItem from './GiphItem';
+import style from '../styles/giphList.css';
 
 export default function GiphList({ giphs }) {
   const giphList = giphs.map((giph, i) => {
@@ -8,7 +9,7 @@ export default function GiphList({ giphs }) {
   });
 
   return (
-    <ul>{giphList}</ul>
+    <ul className={style.list}>{giphList}</ul>
   );
 }
 
