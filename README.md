@@ -10,9 +10,11 @@ Giphy Search is a quick react app used for searching the Giphy API
 
 ## Get Started
 
-`npm start`
+1. Download or clone this repo
 
-Then point your browser at `http://localhost:7890`
+2. `npm start`
+
+3. Then point your browser at `http://localhost:7890`
 
 ## Project Notes
 
