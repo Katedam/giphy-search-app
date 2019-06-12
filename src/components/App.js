@@ -1,8 +1,8 @@
 import React from 'react';
-import { getGiphs } from '../services/giphy-api';
-
+import GiphContainer from './GiphContainer';
 
 export default function App() {
-  getGiphs();
-  return <h1>Hello World</h1>;
+  return (
+    <GiphContainer />
+  );
 }
